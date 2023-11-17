@@ -1,0 +1,15 @@
+﻿@model WebappDEmo.Models.Employee
+
+<h1>Add new employee</h1>
+<form asp-action="Create">
+    <div>
+        <label class="form-label">Name</label>
+        <input asp-for="name" type="text" class="form-control" />
+    </div>
+    <div>
+        <label class="form-label">Email</label>
+        <input asp-for="email" type="text" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" action="/employee">Save</button>
+</form>
